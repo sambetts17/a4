@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document when printing */
+
+/* Removes Navigation Bar when printing */
+nav {display: none}
+/* Removes Background Colour when printing */
+body {
+	background-color: white
+	
+}
+/* increases font size when printing */
+p {
+	font-size: 1.15em;
+}

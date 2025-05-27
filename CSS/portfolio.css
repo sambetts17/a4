@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* default font family */
+* {font-family: Verdana;}
+
+header {
+	background-color: white;
+	margin-top: 40px;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-top: 10px;
+	border: 1px solid;
+}
+/* Copynotice on homepage */
+footer {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	border: 1px solid;
+	text-align: center;
+	padding-bottom: 10px;
+	width: 50%;
+}
+/* Navigation bar margin */
+nav {
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	
+}
+/* CSS Buttons in nav bar */
+.button,
+.button_active {
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+	color: black;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.button_active {background-color: skyblue;}
+
+/* Container position for dropdown button*/
+.skills-dropdown {
+	position: relative;
+	display: inline-block;
+}
+/* Content in the drop down menu (hidden until mouse hovers) */
+.skills-dropdown-content{
+	display: none;
+  	position: absolute;
+	text-align: center;
+  	background-color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
+	color: black;
+	text-decoration: none;
+	font-size: 16px;
+  	z-index: 1;
+}
+
+.skills-dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Show dropdown when mouse hovers */
+.skills-dropdown:hover .skills-dropdown-content {
+	display: block;
+}
+
+/* Change color of dropdown links when you hover */
+.skills-dropdown-content a:hover {background-color: #87CEEB;}
+
+/* Heading 1 and 2 have two different text colours */
+h1 {
+	color: darkblue;
+	text-align: center;
+}
+h2 {
+	color: skyblue;
+	text-align: center;
+}
+/* webpage background colour */
+body {background-color: aliceblue}
+/* main article class sector */
+article.main {
+	margin: 25px;
+	padding: 50px;
+	background-color: white;
+	border-radius: 25px;
+}
+
+/* For floating image on home page to the left, with a gap between the image and the text*/
+.float-left {
+	float: left;
+	margin-right: 40px;
+}
+/*class selector for resume*/
+#resume {
+	line-height: 1.4;
+}
+/* two different font styles */
+.italic{font-style: italic}
+.oblique{font-style: oblique}
+
+#web_skills {
+	line-height: 1.6;
+}
+/* Formatting for resume table */
+#pro_experience table {
+	border: 1px solid black;
+}
+#pro_experience th,
+#pro_experience td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+/* two different font weights */
+
+.thick{font-weight: bold}
+dt {font-weight: 800}
+
+/*three different alignments*/
+.centre{text-align: center}
+.right{text-align: right}
+.justify{text-align: justify}
+/* two text decorations */
+.underline {text-decoration: underline}
+.underline-overline {text-decoration: underline overline}
+/* unordered lists use square bullet points */
+ul {list-style-type: square}
+/* ordered lists use roman numerals */
+ol {list-style-type: lower-roman}
+form {
+	line-height: 2
+}

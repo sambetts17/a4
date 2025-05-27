@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form</title>
+
+<!-- webpage tab icon -->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!-- Main CSS -->
+<link rel="stylesheet" href="CSS/portfolio.css">
+<!-- Printing CSS -->
+<link rel="stylesheet" href="CSS/print.css" media="print">
+<script src="javascript.js"></script>
+
+</head>
+
+<body>
+<header>
+<!--Website header, including navigation bar-->
+<h1>Personal Portfolio - Sam Betts</h1>
+<h2>Form</h2>
+
+<nav>
+<!-- navigation bar -->
+<a href="index.html" class="button">Home</a> |
+<a href="resume.html" class="button">Resume</a> |
+<!-- Relevent Skills Button, uses drop down list -->
+<div class="skills-dropdown">
+	<button class="button">Relevant Skills</button>
+	<div class="skills-dropdown-content">
+		<a href="web_skills.html">Web Development</a>
+		<a>Creative</a>
+		<a>Technical</a>
+	</div>
+</div> |
+<a href="form.html" target="_blank" class="button_active">Form</a>
+</nav>
+
+</header>
+
+<article class="main">
+  <form name="signupForm" action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" onsubmit="return validateForm(event)">
+	<div class="centre">
+    <!-- First Name -->
+    <label for="fname">First Name (required):</label>
+    <input type="text" id="fname" name="fname" maxlength="60" required>
+
+    <!-- Last Name -->
+    <label for="lname">Last Name (required):</label>
+    <input type="text" id="lname" name="lname" maxlength="60" required>
+
+    <!-- Email Address -->
+    <label for="email">Email Address (required):</label>
+    <input type="email" id="email" name="email" maxlength="60" required><br>&nbsp;
+	</div>
+    <!-- Age Range radio buttons -->
+    <div class="centre">
+      <label>Age:</label>
+      <input type="radio" name="age" value="15-25" required> 15-25&nbsp;
+      <input type="radio" name="age" value="26-35"> 26-35&nbsp;
+      <input type="radio" name="age" value="36-45"> 36-45&nbsp;
+      <input type="radio" name="age" value="46-55"> 46-55&nbsp;
+      <input type="radio" name="age" value="55+"> 55+<br>&nbsp;
+    </div>
+
+    <!-- Services Offered -->
+    <div class="centre">
+      <label class="thick">Mining Services of Interest:</label><br>
+      <input type="checkbox" name="service" value="Underground Mining"> Underground Mining<br>
+      <input type="checkbox" name="service" value="Opencore Mining"> Opencore Mining<br>
+      <input type="checkbox" name="service" value="Environmental Impact"> Environmental Impact<br>
+      <input type="checkbox" name="service" value="Drilling"> Drilling<br>
+      <input type="checkbox" name="service" value="Blasting"> Blasting<br>&nbsp;
+    </div>
+
+    <!-- Comments -->
+	<div class="centre">
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" cols="60" rows="3"></textarea>
+	</div>
+    <!-- Submit/Reset -->
+    <div class="centre">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</article>
+</body>
+</html>

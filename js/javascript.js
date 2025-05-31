@@ -1,6 +1,6 @@
 // Display welcome alert when the page loads
 window.onload = function () {
-  alert("Welcome to the Newsletter Signup");
+  alert("Welcome to the Regional Mining Company Newsletter Signup");
 };
 
 // Validate form before submission

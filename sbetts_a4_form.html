@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
+<!--form page, required newsletter signup form. Sam Betts 31May25-->
 <title>form</title>
 
 <!-- webpage tab icon -->
@@ -10,7 +11,7 @@
 <link rel="stylesheet" href="CSS/portfolio.css">
 <!-- Printing CSS -->
 <link rel="stylesheet" href="CSS/print.css" media="print">
-<script src="javascript.js"></script>
+<script src="js/javascript.js"></script>
 
 </head>
 
@@ -23,38 +24,43 @@
 <nav>
 <!-- navigation bar -->
 <a href="index.html" class="button">Home</a> |
-<a href="resume.html" class="button">Resume</a> |
+<a href="sbetts_a4_resume.html" class="button">Resume</a> |
 <!-- Relevent Skills Button, uses drop down list -->
 <div class="skills-dropdown">
 	<button class="button">Relevant Skills</button>
 	<div class="skills-dropdown-content">
-		<a href="web_skills.html">Web Development</a>
-		<a>Creative</a>
-		<a>Technical</a>
+		<a href="sbetts_a4_web_skills.html">Web Development</a>
+		<a href="sbetts_a4_creative.html">Creative</a>
+		<a href="sbetts_a4_technical.html">Technical</a>
+		<a href="sbetts_a4_problem_solving.html">Problem Solving</a>
 	</div>
 </div> |
-<a href="form.html" target="_blank" class="button_active">Form</a>
+<!-- Open form in new tab -->
+<a href="sbetts_a4_form.html" target="_blank" class="button_active">Newsletter Signup Form</a> | 
+<a href="sbetts_a4_about.html" class="button">About</a>
 </nav>
 
 </header>
-
+<!-- Form -->
 <article class="main">
-  <form name="signupForm" action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" onsubmit="return validateForm(event)">
-	<div class="centre">
+<h3>Newsletter Signup Form</h3>
+<hr>
+&nbsp;
+<!-- When form is submitted run validateForm function -->
+  <form name="signupForm" action="https://formsubmit.co/samuelbetts17@gmail.com" method="post" onsubmit="return validateForm(event)">
+	<div>
     <!-- First Name -->
     <label for="fname">First Name (required):</label>
     <input type="text" id="fname" name="fname" maxlength="60" required>
-
     <!-- Last Name -->
     <label for="lname">Last Name (required):</label>
     <input type="text" id="lname" name="lname" maxlength="60" required>
-
     <!-- Email Address -->
     <label for="email">Email Address (required):</label>
     <input type="email" id="email" name="email" maxlength="60" required><br>&nbsp;
 	</div>
     <!-- Age Range radio buttons -->
-    <div class="centre">
+    <div>
       <label>Age:</label>
       <input type="radio" name="age" value="15-25" required> 15-25&nbsp;
       <input type="radio" name="age" value="26-35"> 26-35&nbsp;
@@ -64,7 +70,7 @@
     </div>
 
     <!-- Services Offered -->
-    <div class="centre">
+    <div>
       <label class="thick">Mining Services of Interest:</label><br>
       <input type="checkbox" name="service" value="Underground Mining"> Underground Mining<br>
       <input type="checkbox" name="service" value="Opencore Mining"> Opencore Mining<br>
@@ -74,12 +80,12 @@
     </div>
 
     <!-- Comments -->
-	<div class="centre">
+	<div>
     <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" cols="60" rows="3"></textarea>
 	</div>
     <!-- Submit/Reset -->
-    <div class="centre">
+    <div>
       <input type="submit" value="Submit">
       <input type="reset" value="Reset">
     </div>

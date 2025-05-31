@@ -7,8 +7,8 @@
 header {
 	background-color: white;
 	margin-top: 40px;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 120px;
+	margin-right: 120px;
 	padding-top: 10px;
 	border: 1px solid;
 }
@@ -93,7 +93,10 @@ h2 {
 body {background-color: aliceblue}
 /* main article class sector */
 article.main {
-	margin: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 150px;
+	margin-right: 150px;
 	padding: 50px;
 	background-color: white;
 	border-radius: 25px;
@@ -103,6 +106,11 @@ article.main {
 .float-left {
 	float: left;
 	margin-right: 40px;
+}
+
+.float-right {
+	float: right;
+	margin-left: 40px;
 }
 /*class selector for resume*/
 #resume {

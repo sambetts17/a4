@@ -41,8 +41,9 @@
 </nav>
 
 </header>
-<!-- Form -->
+
 <article class="main">
+<!-- Form -->
 <h3>Newsletter Signup Form</h3>
 <hr>
 &nbsp;
@@ -59,33 +60,57 @@
     <label for="email">Email Address (required):</label>
     <input type="email" id="email" name="email" maxlength="60"><br>&nbsp;
 	</div>
-    <!-- Age Range radio buttons -->
-    <div>
-      <label>Age:</label>
-      <input type="radio" name="age" value="15-25"> 15-25&nbsp;
-      <input type="radio" name="age" value="26-35"> 26-35&nbsp;
-      <input type="radio" name="age" value="36-45"> 36-45&nbsp;
-      <input type="radio" name="age" value="46-55"> 46-55&nbsp;
-      <input type="radio" name="age" value="55+"> 55+<br>&nbsp;
-    </div>
+ 
+<div>
+   <!-- Age Range radio buttons -->
+  <label>Age:</label><br>
 
-    <!-- Services-->
-    <div>
-      <label class="thick">Mining Services of Interest:</label><br>
-      	<input type="checkbox" name="service[]" value="Underground Mining"> Underground Mining<br>
-		<input type="checkbox" name="service[]" value="Opencore Mining"> Opencore Mining<br>
-		<input type="checkbox" name="service[]" value="Environmental Impact"> Environmental Impact<br>
-		<input type="checkbox" name="service[]" value="Drilling"> Drilling<br>
-		<input type="checkbox" name="service[]" value="Blasting"> Blasting<br>&nbsp;
-    </div>
+  <input type="radio" id="age1" name="age" value="15-25">
+  <label for="age1">15–25</label>&nbsp;
 
-    <!-- Comments -->
+  <input type="radio" id="age2" name="age" value="26-35">
+  <label for="age2">26–35</label>&nbsp;
+
+  <input type="radio" id="age3" name="age" value="36-45">
+  <label for="age3">36–45</label>&nbsp;
+
+  <input type="radio" id="age4" name="age" value="46-55">
+  <label for="age4">46–55</label>&nbsp;
+
+  <input type="radio" id="age5" name="age" value="55+">
+  <label for="age5">55+</label><br>&nbsp;
+</div>
+
+
+<div>
+	  <!-- Services checkboxes-->
+  <label class="thick">Mining Services of Interest:</label><br>
+
+  <input type="checkbox" id="underground" name="service[]" value="Underground Mining">
+  <label for="underground">Underground Mining</label><br>
+
+  <input type="checkbox" id="opencore" name="service[]" value="Opencore Mining">
+  <label for="opencore">Opencore Mining</label><br>
+
+  <input type="checkbox" id="environmental" name="service[]" value="Environmental Impact">
+  <label for="environmental">Environmental Impact</label><br>
+
+  <input type="checkbox" id="drilling" name="service[]" value="Drilling">
+  <label for="drilling">Drilling</label><br>
+
+  <input type="checkbox" id="blasting" name="service[]" value="Blasting">
+  <label for="blasting">Blasting</label><br>&nbsp;
+</div>
+
+
 	<div>
+		<!-- Comments text field -->
     <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" cols="60" rows="3"></textarea>
 	</div>
-    <!-- Submit/Reset -->
+
     <div>
+		<!-- Submit/Reset -->
       <input type="submit" value="Submit">
       <input type="reset" value="Reset">
     </div>

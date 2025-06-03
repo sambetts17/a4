@@ -8,7 +8,7 @@ function validateForm(event) {
   // Access form values and trim whitespace
   var fname = document.forms["signupForm"]["fname"].value.trim();
   var lname = document.forms["signupForm"]["lname"].value.trim();
-
+  var email = document.forms["signupForm"]["email"].value.trim();
   // Check if either first or last name is empty or email address
   if (fname === "" || lname === "" || email == "") {
     alert("Please fill out Required Fields");
